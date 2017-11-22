@@ -2,7 +2,7 @@
 Use this link: https://github.com/Microsoft/FederatedFBTroubleshooter/blob/master/FederatedFBTroubleshooter.zip?raw=true
 
 # About FederatedFBTroubleshooter
-The idea behind the FederatedFBTroubleshooter is to create a single, open-source script that can use standard Exchange PowerShell cmdlets to determine and resolve common Federation/FB issues that we see in Support.
+The idea behind the FederatedFBTroubleshooter is to create a single, open-source script that can use standard Exchange PowerShell cmdlets to detect and resolve common Federation/FB issues that we see in Support.
 
 In the initial release, the script's only functionality is to reset WSSecurity on the EWS and Autodiscover virtual directories, per this article: https://support.microsoft.com/en-us/help/2752387/users-from-a-federated-organization-cannot-see-the-free-busy-informati
 
