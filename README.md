@@ -1,3 +1,24 @@
+#About FederatedFBTroubleshooter
+The idea behind the FederatedFBTroubleshooter is to create a single, open-source script that can use standard Exchange PowerShell cmdlets to determine and resolve common Federation/FB issues that we see in Support.  In the initial release, the script's only functionality is to reset WSSecurity on the EWS and Autodiscover virtual directories, per this article: https://support.microsoft.com/en-us/help/2752387/users-from-a-federated-organization-cannot-see-the-free-busy-informati
+
+Additional features and issue detection algorithms will be added in the near future.
+
+#How To Run
+The script MUST be run via Windows Powershell - *NOT* Exchange Management Shell - on the latest version of Exchange.  For example, if you have Exchange 2010, 2013 and 2016, run from an Exchange 2016 server.
+
+To run, type the following in the Exchange Management Shell:
+
+*.\FederatedFBTroubleshooter.ps1*
+
+After detecting the servers in your environment, you will be given 5 choices:
+
+1) Reset WSSecurity on ALL servers
+2) Reset WSSecurity on ALL servers in the server's AD site
+3) Reset WSSecurity on ALL servers of a specific version
+4) Reset WSSecurity on ALL servers of a specific version in the server's AD site
+5) Reset WSSecurity on a specific server
+
+*Note, if you have multiple geographical sites, running the script against ALL servers may take a very long time.  It is recommended, instead, that the script be run from each individual site*
 
 # Contributing
 
